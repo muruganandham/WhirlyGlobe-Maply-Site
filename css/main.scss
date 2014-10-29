@@ -1,0 +1,84 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$background-color: #443933; // to be supplemented with an image pattern.
+$triangle-color:   #f2b200; // h2 decorator in tutorials
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   14px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #fff;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Overall: Scale It Down
+//
+code {
+  font-family:     monospace;
+  font-size:       $base-font-size;
+}
+
+h2 {
+  font-size:       $base-font-size * 1.6;
+}
+
+h3 {
+  font-size:       $base-font-size * 1.4;
+}
+
+h4 {
+  font-size:       $base-font-size * 1.2;
+}
+
+// Tutorial
+//
+.tutorial {
+  color:           $text-color;
+  padding-top:     60px; // Clear out room for the fixed header
+}
+.tutorial-main {
+  background-color: #00557e;
+  p, h3, h4, h5, h6, .highlight {
+    margin-left:    $base-font-size * 2;
+  }
+  h2::before {
+    content:         '▶';
+    font-size:       $base-font-size * 1.2;
+    color:           $triangle-color;
+    padding:         0 $base-font-size * 0.9 0 0;
+    margin-left:     0;
+  }
+}
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
