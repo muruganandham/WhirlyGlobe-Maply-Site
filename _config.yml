@@ -12,4 +12,4 @@ github_username:  mousebird
 
 # Conversion
 markdown:    kramdown
-highlighter: rouge
+highlighter: pygments

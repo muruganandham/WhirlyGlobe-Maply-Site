@@ -13,24 +13,24 @@ Finally, verify that the directory in which Xcode proposes to save your new clas
 
 Next, we'll need to import the headers. Open MainViewController.h and this to the list of imports.
 
-~~~objc
+{% highlight objc %}
 #import “MaplyComponent.h"
-~~~
+{% endhighlight %}
 
 Now let's actually add a WG-Maply view controller. We're going to keep it very simple at first – we just want to verify the project setup before getting much further along.
 
 Open MainViewController.m, and replace the @implementation line with the following:
 
-~~~objc
+{% highlight objc %}
 @implementation MainViewController
 {
   MaplyViewController *theViewC;
 }
-~~~
+{% endhighlight %}
 
 Now we've got a private MaplyViewController. Let's set it up but leave it empty, and add it to our view. Modify the viewDidLoad method to read as follows:
 
-~~~objc
+{% highlight objc %}
 ­(void)viewDidLoad
 {
   [super viewDidLoad];
@@ -41,19 +41,19 @@ Now we've got a private MaplyViewController. Let's set it up but leave it empty,
   theViewC.view.frame = self.view.bounds;
   [self addChildViewController:theViewC];
 }
-~~~
+{% endhighlight %}
 
 Almost there... now we've got to bring our new view controller up when the app starts.
 
 Open AppDelegate.m, and add the following after the import of AppDelegate.h.
 
-~~~objc
+{% highlight objc %}
 #import "MainViewController.h"
-~~~
+{% endhighlight %}
 
 Now, modify didFinishLaunchingWithOptions to read.
 
-~~~objc
+{% highlight objc %}
 ­(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:
 
 (NSDictionary *)launchOptions
@@ -67,7 +67,7 @@ Now, modify didFinishLaunchingWithOptions to read.
 
   return YES;
 }
-~~~
+{% endhighlight %}
 
 That's it! Pick a real or virtual iOS device and run the app. If you get a blank screen (and no build errors), you win. At this point you can be certain that your project setup is correct, and you can proceed to add WG-­Maply features with confidence.
 
