@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$background-color: #443933; // to be supplemented with an image pattern.
+$background-color: #443933; // supplemented with an image pattern below.
 $triangle-color:   #f2b200; // h2 decorator in tutorials
 
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -24,7 +24,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Overall: Scale It Down
+// Overall
+// Scale It Down
 //
 code {
   font-family:     monospace;
@@ -42,15 +43,47 @@ h3 {
 h4 {
   font-size:       $base-font-size * 1.2;
 }
+// Background image
+//
+body {
+  background-image: url('/images/WB-Paper-background.png');
+}
+
+// Webfonts
+.Museo-700 {
+  font-family:     Museo-700;
+  font-weight:     normal;
+  font-style:      normal;
+}
+.Museo-300 {
+  font-family:     Museo-300;
+  font-weight:     normal;
+  font-style:      normal;
+}
+.Museo-500 {
+  font-family:     Museo-500;
+  font-weight:     normal;
+  font-style:      normal;
+}
+
+// Navbar
+//
+.navbar {
+  min-height:      58px;
+  font-family:     Museo-500, serif;
+}
 
 // Tutorial
 //
 .tutorial {
   color:           $text-color;
-  padding-top:     60px; // Clear out room for the fixed header
+  padding-top:     68px; // Clear out room for the fixed header
 }
 .tutorial-main {
   background-color: #00557e;
+  h2, h3, h4, h5, h6 {
+    font-family:     Museo-500;
+  }
   p, h3, h4, h5, h6, .highlight {
     margin-left:    $base-font-size * 2;
   }
