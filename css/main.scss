@@ -46,7 +46,7 @@ h4 {
 // Background image
 //
 body {
-  background-image: url('/images/WB-Paper-background.png');
+  background-image: url('{{ site.baseurl }}/images/WB-Paper-background.png');
 }
 
 // Webfonts
