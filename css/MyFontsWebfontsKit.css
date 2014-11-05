@@ -9,13 +9,13 @@
  * You may obtain a valid license at the URLs below.
  * 
  * Webfont: Museo-700 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/700/
+ * URL: http://www.myfonts.com{{ site.baseurl }}/fonts/exljbris/museo/700/
  * 
  * Webfont: Museo-300 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/300/
+ * URL: http://www.myfonts.com{{ site.baseurl }}/fonts/exljbris/museo/300/
  * 
  * Webfont: Museo-500 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/500/
+ * URL: http://www.myfonts.com{{ site.baseurl }}/fonts/exljbris/museo/500/
  * 
  * 
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2914949
@@ -30,10 +30,10 @@
 @import url("//hello.myfonts.net/count/2c7a85");
 
   
-@font-face {font-family: 'Museo-700';src: url('/fonts/2C7A85_0_0.eot');src: url('/fonts/2C7A85_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2C7A85_0_0.woff2') format('woff2'),url('/fonts/2C7A85_0_0.woff') format('woff'),url('/fonts/2C7A85_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-700';src: url('{{ site.baseurl }}/fonts/2C7A85_0_0.eot');src: url('{{ site.baseurl }}/fonts/2C7A85_0_0.eot?#iefix') format('embedded-opentype'),url('{{ site.baseurl }}/fonts/2C7A85_0_0.woff2') format('woff2'),url('{{ site.baseurl }}/fonts/2C7A85_0_0.woff') format('woff'),url('{{ site.baseurl }}/fonts/2C7A85_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-300';src: url('/fonts/2C7A85_1_0.eot');src: url('/fonts/2C7A85_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2C7A85_1_0.woff2') format('woff2'),url('/fonts/2C7A85_1_0.woff') format('woff'),url('/fonts/2C7A85_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-300';src: url('{{ site.baseurl }}/fonts/2C7A85_1_0.eot');src: url('{{ site.baseurl }}/fonts/2C7A85_1_0.eot?#iefix') format('embedded-opentype'),url('{{ site.baseurl }}/fonts/2C7A85_1_0.woff2') format('woff2'),url('{{ site.baseurl }}/fonts/2C7A85_1_0.woff') format('woff'),url('{{ site.baseurl }}/fonts/2C7A85_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-500';src: url('/fonts/2C7A85_2_0.eot');src: url('/fonts/2C7A85_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2C7A85_2_0.woff2') format('woff2'),url('/fonts/2C7A85_2_0.woff') format('woff'),url('/fonts/2C7A85_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-500';src: url('{{ site.baseurl }}/fonts/2C7A85_2_0.eot');src: url('{{ site.baseurl }}/fonts/2C7A85_2_0.eot?#iefix') format('embedded-opentype'),url('{{ site.baseurl }}/fonts/2C7A85_2_0.woff2') format('woff2'),url('{{ site.baseurl }}/fonts/2C7A85_2_0.woff') format('woff'),url('{{ site.baseurl }}/fonts/2C7A85_2_0.ttf') format('truetype');}
