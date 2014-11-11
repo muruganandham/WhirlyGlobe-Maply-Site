@@ -1,5 +1,5 @@
 ---
-title: WhirlyGlobe-Maply Binary Distribution
+title: Binary Distribution
 layout: tutorial
 ---
 
@@ -24,11 +24,11 @@ Navigate to BinaryDirectory and select WhirlyGlobeMaplyComponent.framework., the
 Finally, we'll need to add some libraries that WG-Maply needs. Click + and add
 
 {% highlight bash %}
-CoreLocation
-libc++
-libz
-libxml2
-libsqlite3
++ CoreLocation
++ libc++
++ libz
++ libxml2
++ libsqlite3
 {% endhighlight %}
 
 The last thing we need to do is indicate where to search for WG-Maply header files. Open up Build Settings and scroll down to Header Search Paths. Add the path corresponding to 'BinaryDirectory/WhirlyGlobeMaplyComponent.framework/Headers/'.

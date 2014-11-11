@@ -1,5 +1,5 @@
 ---
-title: Adding Vector Data
+title: Vector Data
 layout: tutorial
 ---
 
