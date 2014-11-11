@@ -100,8 +100,14 @@ body {
   }
 }
 .tutorial-sidebar {
+  ol, ul {
+    margin-left: 10px;
+  }
   li {
     font-family:   Roboto;
+  }
+  li.sidebar-header-item {
+    text-transform: uppercase;
   }
 }
 

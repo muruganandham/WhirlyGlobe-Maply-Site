@@ -14,22 +14,24 @@
         </div>
 
         <div class="col-sm-3 tutorial tutorial-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>Tutorial</h4>
-          </div>
           <div class="sidebar-module">
             <nav>
               <div class="trigger">
-                <ol class="list-unstyled">
+                <ol class="list-unstyled sidebar-headers">
                   {% for tutorial in site.data.tutorial %}
+                  <li class="sidebar-header-item">{{ tutorial.section }}</li>
+                  <ol class="list-unstyled sidebar-list-items">
+                  {% for file in tutorial.files %}
                   {% if page.title %}
                   {% for page in site.pages %}
                   {% capture f %}{{ page.url | remove:page.dir | remove:'/' }}{% endcapture %}
-                  {% if f == tutorial.filename %}
+                  {% if f == file.filename %}
                   <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                   {% endif %}
                   {% endfor %}
                   {% endif %}
+                  {% endfor %}
+                  </ol>
                   {% endfor %}
                 </ol>
               </div>
