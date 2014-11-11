@@ -9,8 +9,6 @@ WhirlyGlobe-Maply is an open source toolkit for iOS and Android. You can use it 
 
 This document will walk you through the necessary steps to get started with WhirlyGlobe-­Maply. At the end you will have written a simple globe ­based app and/or a simple map based app. The finished projects are available for reference on github <here>, but working through these examples yourself, particularly if you are new to WG-­Maply, is recommended.
 
-<img width="819" height="205" src="http://placehold.it/819x205" alt="Image as HTML tag">
-
 A brief note on style: there are many instances in which you will need to enter project settings, code, or commands in the Terminal application verbatim. In each case, the exact text required will be noted in a fixed­width font, like so.
 
 {% highlight bash %}
