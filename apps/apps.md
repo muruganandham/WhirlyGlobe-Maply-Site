@@ -1,6 +1,6 @@
 ---
 title: Apps with WhirlyGlobe-Maply
-layout: apps
+layout: apps-layout
 ---
 
 A toolkit is only as good as the apps that use it.  Here are some of our favorites.
