@@ -18,7 +18,7 @@ For source control, check the Source Control box to create a local git repositor
 Done? Good. Close Xcode and let's modify the project to pull in WG-Maply.
 
 
-## WhirlyGlobe-Maply Distributions
+### WhirlyGlobe-Maply Distributions
 
 We distribute the WhirlyGlobe-Maply library in three ways. Any one of them is fine.  Pick the one you are most familiar with.  Don’t care?  Try binary.
 

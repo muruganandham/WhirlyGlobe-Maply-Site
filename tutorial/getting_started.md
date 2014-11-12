@@ -15,7 +15,7 @@ There are times you’ll need to ender project settings, code, or commands in th
 Enter Precisely This Text
 {% endhighlight %}
 
-## Pre-Requisites
+### Pre-Requisites
 
 You should be familiar with the Terminal in OS X.  You’ll need to type a number of commands to get started.
 

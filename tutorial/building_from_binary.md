@@ -15,7 +15,7 @@ This guide will simply refer to it as **BinaryDirectory** for purposes of indica
 
 You will need your HelloEarth project [from earlier](hello_earth.html) for the next part.
 
-## Adding the Dependencies
+### Adding the Dependencies
 
 To add an external library in Xcode, select the top level HelloEarth node in the project tab, pick **Build Phases** on the right and open the **Link Binary With Libraries** area.
 

@@ -7,7 +7,7 @@ With open source projects, you expect to get all the source code.  Sure enough, 
 
 So the most open-source-y way to set yourself up is with submodules.  It’s also the slowest, but we like it.
 
-## Setting Up With Submodules
+### Setting Up With Submodules
 
 Open a Terminal window, and change to the root directory of your project. That directory should contain HelloEarth.xcodeproj.
 
@@ -39,7 +39,7 @@ If you get an error message when doing the submodule init, try running the *upda
 
 <hr>
 
-## Adding the Dependencies
+### Adding the Dependencies
 
 Now you need to add the WG-Maply library to the project, along with a number of others upon which WG-Maply depends. 
 
