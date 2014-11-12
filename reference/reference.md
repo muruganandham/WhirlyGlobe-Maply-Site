@@ -7,9 +7,10 @@ We have two sets of reference documentation available, one for iOS and one for A
 
 Go check out the tutorials first if you're new.  
 
-[iOS docs]({{ site.baseurl }}/reference/ios_2_3/index.html)
+<p>
+<a href="{{ site.baseurl }}/reference/ios_2_3/index.html" target="_blank">iOS docs</a>
+</p>
 
-
-[Android docs]({{ site.baseurl }}/reference/android_3_0/index.html)
-
-
+<p>
+<a href="{{ site.baseurl }}/reference/android_3_0/index.html" target="_blank">Android docs</a>
+</p>
