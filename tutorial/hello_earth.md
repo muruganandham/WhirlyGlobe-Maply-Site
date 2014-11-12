@@ -3,6 +3,8 @@ title: Hello Earth Project
 layout: tutorial
 ---
 
+You need to create an Xcode project.  We’ll call it **HelloEarth** and you’ll add all your tutorial code to it.
+
 Open Xcode, select File, New, and then Project.  Use the Single View Application Template.
 
 ![Single View Application]({{ site.baseurl }}/images/tutorial/hello_earth_template.png)

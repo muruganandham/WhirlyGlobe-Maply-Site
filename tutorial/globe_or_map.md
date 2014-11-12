@@ -3,13 +3,13 @@ title: Globe Or Map
 layout: tutorial
 ---
 
-The toolkit can make you a 3D globe or a 2D map equally well.  The vast majority of the toolkit is the same, but the entry points differ.
+You can make a 3D globe or a 2D map equally well in WhirlyGlobe-Maply.  Hence the name.  Most of the objects are the same and, after a bit of setup, you use them almost identically.  The main difference is the UIViewController.
+
+![Globe and Map]({{ site.baseurl }}/images/tutorial/getting_started_header.png)
 
 If you want a rotating globe, you'll want a [WhirlyGlobeViewController](../documentation/2_3/Classes/WhirlyGlobeViewController.html). If you want a slippy map, you'll want a [MaplyViewController](../documentation/2_3/Classes/MaplyViewController.html).
 
-Once you've done some minor customization to that view controller, the code to add display layers and interact with the globe or map is nearly identical.
-
-First we'll guide you though the process of adding a globe, and then we'll look at what would have to change if we were adding a map instead. If you're more interested in flat maps, skip ahead to Your First Map. Thanks to the miracle of cut and paste, Your First Map covers the same information, but with flat maps taking center stage. Pick whichever appeals to you, and skip the other section.
+We’ve got both versions right here.  Pick your favorite, map or globe, and then proceed.  The rest of tutorials will work with either and if you’re feeling ambitious you can even make them optional in your own code.
 
 [Your First Globe](your_first_globe.html)
 
