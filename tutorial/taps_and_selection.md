@@ -1,5 +1,5 @@
 ---
-title: Taps and Selection
+title: Feature Selection
 layout: tutorial
 ---
 
