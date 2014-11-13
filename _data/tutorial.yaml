@@ -11,10 +11,13 @@
     - filename: your_first_globe.html
     - filename: your_first_map.html
 
-- section: Data Overlays
+- section: Image Based Maps
   files: 
-    - filename: adding_a_layer.html
-    - filename: remote_image_tiles.html
+    - filename: local_image_layer.html
+    - filename: remote_image_layer.html
+
+- section: Overlays
+  files:
     - filename: adding_vector_data.html
 
 - section: Interaction

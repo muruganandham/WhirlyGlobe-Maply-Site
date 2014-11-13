@@ -3,7 +3,7 @@ title: Before You Start
 layout: tutorial
 ---
 
-WhirlyGlobe-Maply is an open source toolkit for iOS and Android. You can use it to build an interactive 2D map (Maply) or a 3D globe (WhirlyGlobe).  For more information, check out the [project page](http://mousebird.github.io/WhirlyGlobe/).
+WhirlyGlobe-Maply is an open source toolkit for iOS and Android. You can use it to build an interactive 2D map (Maply) or a 3D globe (WhirlyGlobe).  For more information, check out the [project page]({{ site.baseurl }}/index.html).
 
 ![Globe and Map]({{ site.baseurl }}/images/tutorial/getting_started_header.png)
 
@@ -15,7 +15,7 @@ There are times you’ll need to ender project settings, code, or commands in th
 Enter Precisely This Text
 {% endhighlight %}
 
-## Pre-Requisites
+### Pre-Requisites
 
 You should be familiar with the Terminal in OS X.  You’ll need to type a number of commands to get started.
 

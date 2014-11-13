@@ -5,7 +5,8 @@
 
 // Our variables
 $background-color: #443933; // supplemented with an image pattern below.
-$triangle-color:   #f2b200; // h2 decorator in tutorials, also referenced in _sass/_base.scss
+$triangle-color-1:   #f2b200; // h2 decorator in tutorials, also referenced in _sass/_base.scss
+$triangle-color-2:   #e84b38; // h3 decorator in tutorials, also referenced in _sass/_base.scss
 
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
@@ -88,13 +89,20 @@ body {
   p {
     font-family:   Roboto;
   }
-  p, h3, h4, h5, h6, .highlight {
+  p, h4, h5, h6, .highlight {
     margin-left:   $base-font-size * 2;
   }
   h2::before {
     content:       '▶';
     font-size:     $base-font-size * 1.2;
-    color:         $triangle-color;
+    color:         $triangle-color-1;
+    padding:       0 $base-font-size * 0.9 0 0;
+    margin-left:   0;
+  }
+  h3::before {
+    content:       '▶';
+    font-size:     $base-font-size * 1.2;
+    color:         $triangle-color-2;
     padding:       0 $base-font-size * 0.9 0 0;
     margin-left:   0;
   }
