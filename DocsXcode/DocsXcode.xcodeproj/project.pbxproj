@@ -79,6 +79,11 @@
 		2B4E06E31A15572100ADA318 /* ViewController_remote_image_layer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_remote_image_layer.m; sourceTree = "<group>"; };
 		2B4E06E41A15591D00ADA318 /* remote_image_layer_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remote_image_layer_1.png; sourceTree = "<group>"; };
 		2B4E06E51A155B4600ADA318 /* remote_image_layer_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remote_image_layer_2.png; sourceTree = "<group>"; };
+		2B4E06E61A155F2600ADA318 /* ViewController_adding_vector_data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_adding_vector_data.m; sourceTree = "<group>"; };
+		2B4E06E71A15606600ADA318 /* adding_vector_data_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adding_vector_data_1.png; sourceTree = "<group>"; };
+		2B4E06E81A15619400ADA318 /* adding_vector_data_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adding_vector_data_2.png; sourceTree = "<group>"; };
+		2B4E08DC1A15711700ADA318 /* adding_vector_data_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adding_vector_data_3.png; sourceTree = "<group>"; };
+		2B4E08DD1A15711700ADA318 /* adding_vector_data_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adding_vector_data_4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -261,6 +266,10 @@
 				2B4E06DA1A1541F300ADA318 /* local_image_layer_1.png */,
 				2B4E06DF1A15437900ADA318 /* local_image_layer_2.png */,
 				2B4E06E21A1549AF00ADA318 /* local_image_layer_3.png */,
+				2B4E06E71A15606600ADA318 /* adding_vector_data_1.png */,
+				2B4E06E81A15619400ADA318 /* adding_vector_data_2.png */,
+				2B4E08DC1A15711700ADA318 /* adding_vector_data_3.png */,
+				2B4E08DD1A15711700ADA318 /* adding_vector_data_4.png */,
 			);
 			path = tutorial;
 			sourceTree = "<group>";
@@ -268,6 +277,7 @@
 		2B4E06DB1A15429400ADA318 /* code */ = {
 			isa = PBXGroup;
 			children = (
+				2B4E06E61A155F2600ADA318 /* ViewController_adding_vector_data.m */,
 				2B4E06E31A15572100ADA318 /* ViewController_remote_image_layer.m */,
 				2B4E06DC1A15429400ADA318 /* ViewController_globe_and_map.m */,
 			);
