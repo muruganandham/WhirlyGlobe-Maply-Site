@@ -1,13 +1,17 @@
 ---
-title: Remote Image Tiles
+title: Remote Image Layer
 layout: tutorial
 ---
 
-The [geography class](http://a.tiles.mapbox.com/v3/mapbox.geography-class/page.html#4/0.00/0.00) map only has a few levels of detail. It's pretty small and restrictive.  What we'd like to have is a much bigger map, too big to fit on the device.  That means a remote tile source.
+The map only has a few levels of detail. It's pretty small and restrictive.  What we'd like to have is a much bigger map, too big to fit on the device.  That means a remote tile source.
+
+[picture]
 
 Let's add a remote tile source, and take a closer look at the Earth. We'll use the MapQuest Open Aerial tile set. If you end up wanting to use these tiles in an app that you distribute, check out the [requirements](http://developer.mapquest.com/web/products/open/map).
 
-Start by opening the HelloEarth project if it isn't already open.  
+You need to have already worked your way through the [Local Image Layer](local_image_tiles.html) tutorial.  Open the HelloEarth Project to get started.
+
+[picture]
 
 We'll set this up to use either the local or remote tiles. Look for the following lines in your source code.
 
@@ -45,11 +49,14 @@ if (useLocalTiles)
 }
 {% endhighlight %}
 
+It's pretty similar to loading a local image tile set.  Just a few changes.
+- We want a cache directory for the remote tiles.  It's rude to thrash the server.
+- The <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyRemoteTileSource.html" target="_blank">MaplyRemoteTileSource</a> serves as the data source.
+- We initialize the <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyQuadImageTilesLayer.html" target="_blank">MaplyQuadImageTilesLayer</a> as normal.
+
 Build and run, and play with the new HelloEarth. You can zoom in to your heart's content, provided your heart doesn't desire sub­meter resolution.
 
-Here's what's different. Previously we were using a [MaplyMBTileSource](http://mousebird.github.io/WhirlyGlobe/documentation/2_3/Classes/MaplyMBTileSource.html) tile source.  That only knows how to read local MBTiles files.  We replaced it with a [MaplyRemoteTileSource](http://mousebird.github.io/WhirlyGlobe/documentation/2_3/Classes/MaplyRemoteTileSource.html) which knows how to talk to servers.
-
-The [MaplyRemoteTileSource](http://mousebird.github.io/WhirlyGlobe/documentation/2_3/Classes/MaplyRemoteTileSource.html) has a number of interesting properties, so be sure to check out the documentation.  It can talk to a standard [Tile Map Service](http://wiki.openstreetmap.org/wiki/TMS), like the ones provided by [OpenStreetMap](http://www.openstreetmap.org/).
+The only significant difference is the <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyRemoteTileSource.html" target="_blank">MaplyRemoteTileSource</a>.  It knows how to talk to remote servers and fetch tiles in the standard [Tile Map Service](http://wiki.openstreetmap.org/wiki/TMS), like the ones provided by [OpenStreetMap](http://www.openstreetmap.org/).
 
 Next up, let’s add some vector data.
 

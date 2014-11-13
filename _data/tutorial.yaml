@@ -13,8 +13,8 @@
 
 - section: Data Overlays
   files: 
-    - filename: adding_a_layer.html
-    - filename: remote_image_tiles.html
+    - filename: local_image_layer.html
+    - filename: remote_image_layer.html
     - filename: adding_vector_data.html
 
 - section: Interaction
