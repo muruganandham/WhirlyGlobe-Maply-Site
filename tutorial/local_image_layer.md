@@ -5,31 +5,35 @@ layout: tutorial
 
 Despite your swelling pride, the blank screen is only so satisfying. Let's add a visible layer.  We're going to use the Geography Class example from Mapbox and we'll pull it locally, from device storage.
 
-[picture]
+![Geography Class from Mapbox]({{ site.baseurl }}/images/tutorial/geography_class_mapbox.png)
 
 You'll need to have done the [globe](your_first_globe.html) or [map](your_first_map.html) tutorials, either is fine.  Open your HelloEarth project and get ready.
 
-[picture]
+![Xcode ViewController.m]({{ site.baseurl }}/images/tutorial/local_image_layer_1.png)
 
+If you haven't got one here is a suitable [ViewController.m]({{ site.baseurl }}/tutorial/code/ViewController_globe_and_map.m) file to start with.  This version handles both a globe and a map and makes a nice starting point.
+                                           
 ### Geography Class MBTiles
 
-Getting data to display is always the interesting part.  Sometimes it's free, sometimes it's not.  You often have to process it.  But for now, there's some in the distribution you can use.
+We need the Geography Class MBTiles file from Mapbox.  Luckily, you'll find you already have it.
 
 If you set up WhirlyGlobe-Maply as a submodule, look in libs/WhirlyGlobeMap/resources/.  If you used the binary distribution look in BinaryDirectory/resources.  For Cocoapods [do something].  We want to the file geography-class_medres.mbtiles.
 
-Add geography­class_medres.mbtiles to your project by dragging it into HelloEarth in your Project Navigator view. You can create a Resources folder there if you like, but it's not necessary. The same goes for 'Copy items into the destination group's folder' – if you want your project to have its own copy of the file, check that box. What is necessary is to check the 'Add to targets' box for HelloEarth, to ensure that the data is packaged with your app when it is built.
+Add **geography­class_medres.mbtiles** to your project by dragging it into HelloEarth in your Project Navigator view. You can create a Resources folder there if you like, but it's not necessary. The same goes for 'Copy items into the destination group's folder' – if you want your project to have its own copy of the file, check that box. What you must do, however is check the 'Add to targets' box for HelloEarth, to ensure that the data is packaged with your app when it is built.
 
-[pictures]
+![Geography Class Import]({{ site.baseurl }}/images/tutorial/local_image_layer_2.png)
+
+That will get the MBTiles file into the bundle.  Next, we display it.
 
 ### Adding a Layer
 
-That will get the MBTiles file into bundle.  Now we have to display it.  There are a few steps.
+There are a few steps to displaying an MBTiles file on your globe or map.
 
 - Create the MaplyMBTileSource to read it.
 - Spin up a MaplyQuadImageTilesLayer to display it.
 - Start in a useful position on the globe
 
-Now, let's add this as a layer to theViewC. Open MainViewController.m and add the following lines to the end of the viewDidLoad method.
+If you worked through the globe or the map example, you'll need to add this little bit of code to your viewDidLoad method.  This will make the examples work with either globe or map.  If you're using the ViewController.m from above, you don't need it.
 
 {% highlight objc %}
 // this logic makes it work for either globe or map
@@ -39,7 +43,11 @@ if ([theViewC isKindOfClass:[WhirlyGlobeViewController class]])
     globeViewC = (WhirlyGlobeViewController *)theViewC;
 else
     mapViewC = (MaplyViewController *)theViewC;
+{% endhighlight %}
 
+Here's how you open the MBTiles database, create the layer and add it to the globe or map.  These changes go in the viewDidLoad method.
+
+{% highlight objc %}
 // we want a black background for a globe, a white background for a map.
 theViewC.clearColor = (globeViewC != nil) ? [UIColor blackColor] : [UIColor whiteColor];
 
@@ -47,11 +55,13 @@ theViewC.clearColor = (globeViewC != nil) ? [UIColor blackColor] : [UIColor whit
 theViewC.frameInterval = 2;
 
 // set up the data source
-MaplyMBTileSource *tileSource = [[MaplyMBTileSource alloc]
-initWithMBTiles:@"geography­class_medres"];
+MaplyMBTileSource *tileSource = 
+    [[MaplyMBTileSource alloc] initWithMBTiles:@"geography-class_medres"];
 
 // set up the layer
-MaplyQuadImageTilesLayer *layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+MaplyQuadImageTilesLayer *layer = 
+    [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys 
+                                      tileSource:tileSource];
 layer.handleEdges = (globeViewC != nil);
 layer.coverPoles = (globeViewC != nil);
 layer.requireElev = false;
@@ -60,26 +70,30 @@ layer.drawPriority = 0;
 layer.singleLevelLoading = false;
 [theViewC addLayer:layer];
 
-// start up over San Francisco
+// start up over San Francisco, center of the universe
 if (globeViewC != nil)
 {
   globeViewC.height = 0.8;
-  [globeViewC animateToPosition:MaplyCoordinateMakeWithDegrees(­122.4192,37.7793) time:1.0];
+    [globeViewC animateToPosition:MaplyCoordinateMakeWithDegrees(-122.4192,37.7793)
+                time:1.0];
 } else {
   mapViewC.height = 1.0;
-  [mapViewC animateToPosition:MaplyCoordinateMakeWithDegrees(­122.4192,37.7793) time:1.0];
+  [mapViewC animateToPosition:MaplyCoordinateMakeWithDegrees(-122.4192,37.7793)
+            time:1.0];
 }
 {% endhighlight %}
 
 Now, when you run HelloEarth, you should see a colorful set of countries looking back at you.
 
-[picture]
+![iOS Simulator]({{ site.baseurl }}/images/tutorial/local_image_layer_3.png)
+
+If you're doing a map it'll look like that.  Only, you know, flat.
 
 ### Deeper Dive
 
 You might notice there were two interesting objects there.  First was the <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyMBTileSource.html" target="_blank">MaplyMBTileSource</a> and the second a <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyQuadImageTilesLayer.html" target="_blank">MaplyQuadImageTilesLayer</a>.
 
-The MaplyMBTileSource is responsible for reading the MBTiles file, which is just a big sqlite file with a bunch of images in it.  The MaplyQuadImageTilesLayer is much more complicated.  It responds to changes in viewer position and load the most appropriate image tiles.
+The MaplyMBTileSource is responsible for reading the MBTiles file, which is just a big sqlite file with a bunch of images in it.  The MaplyQuadImageTilesLayer is much more complicated.  It responds to changes in viewer position and loads the most appropriate image tiles.
 
 <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyQuadImageTilesLayer.html" target="_blank">MaplyQuadImageTilesLayers</a> are pretty flexible.  Let's look at some of the properties.
 
@@ -91,6 +105,6 @@ The MaplyMBTileSource is responsible for reading the MBTiles file, which is just
 
 There are plenty of other properties we haven't touched on here.  Browse through the documentation and you'll see a lot more.
 
-This tutorial works equally well on the globe or a flat map.  Let’s move on to remote image tiles.
+Next up, an image layer you page over the network.
 
 [Remote Image Layer](remote_image_layer.html)

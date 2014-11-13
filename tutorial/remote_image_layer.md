@@ -3,26 +3,33 @@ title: Remote Image Layer
 layout: tutorial
 ---
 
-The map only has a few levels of detail. It's pretty small and restrictive.  What we'd like to have is a much bigger map, too big to fit on the device.  That means a remote tile source.
+The Geography Class example only has a few levels of detail.  We can't zoom in very close and if we could it would take up way too much space on the device.  Thus, we need a way to look at tiled image maps sitting on a server.
 
-[picture]
+![MapQuest Open Satellite]({{ site.baseurl }}/images/tutorial/remote_image_layer_1.png)
 
 Let's add a remote tile source, and take a closer look at the Earth. We'll use the MapQuest Open Aerial tile set. If you end up wanting to use these tiles in an app that you distribute, check out the [requirements](http://developer.mapquest.com/web/products/open/map).
 
-You need to have already worked your way through the [Local Image Layer](local_image_tiles.html) tutorial.  Open the HelloEarth Project to get started.
+You'll need to have done the [Local Image Layer](local_image_tiles.html) tutorial.  Open your HelloEarth project and get ready.
 
-[picture]
+![Xcode ViewController.m]({{ site.baseurl }}/images/tutorial/local_image_layer_1.png)
+
+If you haven't got one here is a suitable [ViewController.m]({{ site.baseurl }}/tutorial/code/ViewController_remote_image_layer.m) file to start with.  This version handles both a globe and a map and makes a nice starting point.
+
+### Remote Tile Source
 
 We'll set this up to use either the local or remote tiles. Look for the following lines in your source code.
 
 {% highlight objc %}
 // Set up the layer
-MaplyMBTileSource *tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:@"geography­class_medres"];
+MaplyMBTileSource *tileSource = 
+    [[MaplyMBTileSource alloc] initWithMBTiles:@"geography-­class_medres"];
 
-MaplyQuadImageTilesLayer *layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+MaplyQuadImageTilesLayer *layer = 
+    [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys 
+                                      tileSource:tileSource];
 {% endhighlight %}
 
-Now replace that with these lines instead.
+Now replace that with these lines instead.  This will let you use either local or remote data.
 
 {% highlight objc %}
 // add the capability to use the local tiles or remote tiles
@@ -33,31 +40,45 @@ MaplyQuadImageTilesLayer *layer;
 
 if (useLocalTiles)
 {
-  MaplyMBTileSource *tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:@"geography­class_medres"];
-  layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+  MaplyMBTileSource *tileSource = 
+        [[MaplyMBTileSource alloc] initWithMBTiles:@"geography­-class_medres"];
+  layer = [[MaplyQuadImageTilesLayer alloc] 
+                initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
 } else {
   // Because this is a remote tile set, we'll want a cache directory
-  NSString *baseCacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-  NSString *aerialTilesCacheDir = [NSString stringWithFormat:@"%@/osmtiles/",baseCacheDir];
+  NSString *baseCacheDir = 
+    [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) 
+            objectAtIndex:0];
+  NSString *aerialTilesCacheDir = [NSString stringWithFormat:@"%@/osmtiles/",
+                                                baseCacheDir];
   int maxZoom = 18;
 
   // MapQuest Open Aerial Tiles, Courtesy Of Mapquest
   // Portions Courtesy NASA/JPL­Caltech and U.S. Depart. of Agriculture, Farm Service Agency
-  MaplyRemoteTileSource *tileSource = [[MaplyRemoteTileSource alloc] initWithBaseURL:@"http://otile1.mqcdn.com/tiles/1.0.0/sat/" ext:@"png" minZoom:0 maxZoom:maxZoom];
+  MaplyRemoteTileSource *tileSource = 
+    [[MaplyRemoteTileSource alloc] 
+            initWithBaseURL:@"http://otile1.mqcdn.com/tiles/1.0.0/sat/" 
+            ext:@"png" minZoom:0 maxZoom:maxZoom];
   tileSource.cacheDir = aerialTilesCacheDir;
-  layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+  layer = [[MaplyQuadImageTilesLayer alloc] 
+            initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
 }
 {% endhighlight %}
 
-It's pretty similar to loading a local image tile set.  Just a few changes.
-- We want a cache directory for the remote tiles.  It's rude to thrash the server.
-- The <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyRemoteTileSource.html" target="_blank">MaplyRemoteTileSource</a> serves as the data source.
-- We initialize the <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyQuadImageTilesLayer.html" target="_blank">MaplyQuadImageTilesLayer</a> as normal.
+Don't forget the call to addLayer below this.  We're just creating a slightly different data source, we still need to add the layer to the globe or map.
 
-Build and run, and play with the new HelloEarth. You can zoom in to your heart's content, provided your heart doesn't desire sub­meter resolution.
+There's only one important change here.  Rather than use a <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyMBTileSource.html" target="_blank">MaplyMBTileSource</a> we create a <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyRemoteTileSource.html" target="_blank">MaplyRemoteTileSource</a>.  It does just what it sounds like, loads its tiles from a remote source.
 
-The only significant difference is the <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyRemoteTileSource.html" target="_blank">MaplyRemoteTileSource</a>.  It knows how to talk to remote servers and fetch tiles in the standard [Tile Map Service](http://wiki.openstreetmap.org/wiki/TMS), like the ones provided by [OpenStreetMap](http://www.openstreetmap.org/).
+We also set up a cache for the tiles because it's rude to thrash the server.  We set up the <a href= "{{ site.baseurl }}/reference/ios_2_3/Classes/MaplyQuadImageTilesLayer.html" target="_blank">MaplyQuadImageTilesLayer</a> as before.  It can handle a variety of data sources.
 
-Next up, let’s add some vector data.
+### Build and Run
+
+Give it a try.  It's even more fun on a device. You can zoom in to your heart's content, provided your heart doesn't desire sub­meter resolution.
+
+![MapQuest Areal in Simulator]({{ site.baseurl }}/images/tutorial/remote_image_layer_2.png)
+
+All that with just a few lines of code.  WhirlyGlobe-Maply is doing a lot of work behind the scenes.  As you move around it pulls in new data, caches it to the local device, displays it, gets rid of the old data and so forth.  But setting all this up is easy.
+
+Next up, let’s overlay some data on here.  How about some vectors?
 
 [Adding Vector Data](adding_vector_data.html)

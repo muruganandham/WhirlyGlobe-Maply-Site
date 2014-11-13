@@ -3,9 +3,7 @@ title: Apps Using WhirlyGlobe-Maply
 layout: default
 ---
 
-A toolkit is only as good as the apps that use it.  Here are some of our favorites.
-
-If you'd like to be included here, just send us an image and a short description.  We'll be happy to include you.
+A toolkit is only as good as the apps that use it.  Here are some of our favorites. If you'd like to be included here, just send us an image and a short description.
 
 ---
 

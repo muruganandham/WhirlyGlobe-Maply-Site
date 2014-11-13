@@ -20,7 +20,7 @@ Now let's actually add a WhirlyGlobeViewController. We're going to keep it very 
 Open ViewController.m, and find the @implementation line.  Modify it like so.
 
 {% highlight objc %}
-@implementation MainViewController
+@implementation ViewController
 {
   WhirlyGlobeViewController *theViewC;
 }
@@ -45,6 +45,6 @@ That's it! Pick a real or virtual iOS device and run the app. If you get a blank
 
 If you encounter build errors, or something other than a black screen comes up on the device review the above steps, and ensure that you have done everything correctly!
 
-Next up, adding a layer to your globe.
+Next up, adding an image layer to your globe.
 
-[Adding a Layer](adding_a_layer.html)
+[Adding a Layer](local_image_layer.html)
