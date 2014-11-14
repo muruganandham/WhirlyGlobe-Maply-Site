@@ -3,60 +3,43 @@ title: WhirlyGlobe-Maply
 layout: home
 ---
 
-## WhirlyGlobe-Maply for iOS and Android
+## What It Is
 
+Swag Thundercats next level banh mi, mlkshk quinoa flexitarian Odd Future. Chambray pour-over sartorial, readymade keffiyeh chia fap Bushwick Portland. American Apparel Neutra McSweeney's Pinterest. Keytar synth Pinterest, 8-bit hoodie meggings blog chillwave pop-up Etsy authentic disrupt Carles scenester polaroid.
 
+Asymmetrical chambray you probably haven't heard of them, fingerstache mumblecore raw denim before they sold out.
 
-Based on OpenGL ES and focused on mobile first, WhirlyGlobe-Maply is used in a wide variety of altas, weather, visualization, and map apps.
+Butcher four loko ethical organic cray you probably haven't heard of them chia meh polaroid, church-key direct trade roof party Tumblr YOLO. Thundercats Kickstarter cray sriracha chia. Fanny pack street art meggings retro Banksy. Cray street art hoodie, distillery tousled keytar kitsch Godard Tumblr sriracha PBR&B Williamsburg wolf quinoa pop-up. Schlitz polaroid taxidermy vegan art party small batch.
 
-The full feature is pretty list long, but here are a few things you can display with the toolkit.
-
-- Giant networked image basemaps
-- Animated weather data
-- Labels, both 2D and 3D
-- Markers, likewise 2D and 3D
-- Floating annotations
-- Vectors, outlined and filled
-- Lofted polygons
-- Tiled vector maps
-
-It's big, but it's also friendly.  We present the native interface on each platform and we've got some nice tutorials.  Developers of all skill levels have made WhirlyGlobe-Maply apps.  You can too!
-
-### Videos
+## Videos
 
 Check out what the toolkit can do.  Here are a couple of short videos showing off the globe and the map, respectively.
 
-<div class="container">
-<div class="col-md-4">
-<iframe width="380" height="260" src="http://www.youtube.com/embed/rprzbSwqE2Y?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe src="http://www.youtube.com/embed/rprzbSwqE2Y?feature=player_embedded" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe src="https://www.youtube.com/embed/YTBSl4Cok9A?feature=player_embedded" allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
 
-<div class="col-md-2">
-<iframe width="380" height="260" src="https://www.youtube.com/embed/YTBSl4Cok9A?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
+## Documentation and Resources
 
-### iPhone and iPad
+There's a [getting started]({{ site.baseurl }}/tutorial/getting_started.html) guide. I suggest you get started there.
 
-The toolkit started on iOS and that's the most mature platform.  The released version is 2.3 and the develop branch contains 2.4 at the moment.
+Reference documentation is also [there]({{ site.baseurl }}/reference/reference.html). Best to use if you're in the middle of development.
 
-We do deep, dark things with OpenGL ES and C++ in the core.  But you don't see any of that!  The interface is Objective-C and used easily in Swift as well.
+Please join the [mailing list](http://eepurl.com/D30CD) for very infrequent announcements.
 
-### Android
+Check out the [mousebird consulting blog](http://mousebirdconsulting.blogspot.com) for technical discussion.
 
-We've been busy porting to Android!  So far it's just Maply (2D slippy map), but the globe can't be far behind.  Look for version 3.0 in the source tree and give it a try.
-
-Is this a terrible C++ port to Android?  No!  We hide all that NDK stuff and provide a nice, clean Java interface.
-
-### Keeping Up
-
-For the latest news, check out the [mousebird consulting blog](http://mousebirdconsulting.blogspot.com).
-
-There's a nice low traffic [mailing list](http://eepurl.com/D30CD) for anouncements.  Join!
-
-You can follow us on [twitter](https://twitter.com/mousebirdc).  Because why not.
-
-### License
+## Background
 
 WhirlyGlobe-Maply is wholly owned by mousebird consulting and distributed under the Apache 2.0 license. The toolkit is free, but we make money from consulting. If you're doing something commercial, consider us in your development plans.
 
