@@ -5,7 +5,7 @@ layout: home
 
 ## WhirlyGlobe-Maply for iOS and Android
 
-![Globe and Map]({{ site.baseurl }}/images/globe_and_map.png)
+
 
 Based on OpenGL ES and focused on mobile first, WhirlyGlobe-Maply is used in a wide variety of altas, weather, visualization, and map apps.
 

@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
+<body>
+{% include header.html %}
+{% include carousel.html %}
 
-  {% include head.html %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 tutorial tutorial-main">
 
-  <body>
+      <h2>{{ page.title }}</h2>
+      {{ content }}
 
-    {% include header.html %}
+    </div>
 
-    <div class="container">
+</div>
 
-        <div class="col-sm-12 tutorial tutorial-main">
-            
-            {{ content }}
-            
-        </div>
+{% include footer.html %}
 
-    </div><!-- /.container -->
-
-    {% include footer.html %}
-
-  </body>
-
+</body>
 </html>
