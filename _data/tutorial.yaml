@@ -4,6 +4,7 @@
     - filename: hello_earth.html
     - filename: building_from_source.html
     - filename: building_from_binary.html
+    - filename: building_from_cocoapod.html
 
 - section: Basics of Display
   files: 
@@ -22,7 +23,7 @@
 
 - section: Interaction
   files: 
-    - filename: taps_and_selection.html
+    - filename: vector_selection.html
 
 - section: Advanced
   files:

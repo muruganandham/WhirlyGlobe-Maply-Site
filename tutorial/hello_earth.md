@@ -24,6 +24,6 @@ We distribute the WhirlyGlobe-Maply library in three ways. Any one of them is fi
 
 * [Building from Source](building_from_source.html) - Use submodules for the distribution on github.
 * [Build from binary](building_from_binary.html) - The self contained binary distribution.
-* [Build with CocoaPods](building_with_cocoapods.html) - Use the WG-Maply CocoaPod.
+* [Build with CocoaPods](building_from_cocoapod.html) - Use the WG-Maply CocoaPod.
 
 It’s like a pick your own adventure book, but boring.  So just like a pick your own adventure book.
