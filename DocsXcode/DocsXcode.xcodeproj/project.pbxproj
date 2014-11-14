@@ -90,6 +90,10 @@
 		2B4E08E11A157DC100ADA318 /* vector_selection_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vector_selection_3.png; sourceTree = "<group>"; };
 		2B4E08E21A15803E00ADA318 /* ViewController_post_vector_selection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_post_vector_selection.m; sourceTree = "<group>"; };
 		2B4E08E61A1582F000ADA318 /* component_tester_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = component_tester_1.png; sourceTree = "<group>"; };
+		2B4E08E71A15CDC600ADA318 /* building_from_cocoapod.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = building_from_cocoapod.md; sourceTree = "<group>"; };
+		2B4E091B1A15D98300ADA318 /* whirlyglobecocoapod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whirlyglobecocoapod.png; sourceTree = "<group>"; };
+		2B4E091C1A15D98300ADA318 /* cocoapodslogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cocoapodslogo.gif; sourceTree = "<group>"; };
+		2B4E091D1A15D98300ADA318 /* cocoapods_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocoapods_1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -200,6 +204,7 @@
 				2B4E06A81A152FD700ADA318 /* adding_vector_data.md */,
 				2B4E06A91A152FD700ADA318 /* building_from_binary.md */,
 				2B4E06AA1A152FD700ADA318 /* building_from_source.md */,
+				2B4E08E71A15CDC600ADA318 /* building_from_cocoapod.md */,
 				2B4E06AB1A152FD700ADA318 /* component_tester.md */,
 				2B4E06AC1A152FD700ADA318 /* getting_started.md */,
 				2B4E06AD1A152FD800ADA318 /* globe_or_map.md */,
@@ -257,6 +262,9 @@
 		2B4E06CC1A153FB100ADA318 /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2B4E091B1A15D98300ADA318 /* whirlyglobecocoapod.png */,
+				2B4E091C1A15D98300ADA318 /* cocoapodslogo.gif */,
+				2B4E091D1A15D98300ADA318 /* cocoapods_1.png */,
 				2B4E06E51A155B4600ADA318 /* remote_image_layer_2.png */,
 				2B4E06E41A15591D00ADA318 /* remote_image_layer_1.png */,
 				2B4E06CD1A153FB100ADA318 /* binary_dist_1.png */,

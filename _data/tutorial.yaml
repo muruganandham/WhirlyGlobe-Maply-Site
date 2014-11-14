@@ -4,6 +4,7 @@
     - filename: hello_earth.html
     - filename: building_from_source.html
     - filename: building_from_binary.html
+    - filename: building_from_cocoapod.html
 
 - section: Basics of Display
   files: 
