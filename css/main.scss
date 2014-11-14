@@ -88,6 +88,15 @@ body {
   p {
     font-family:   Roboto;
   }
+  .video-caption {
+    h2 {
+      text-transform: uppercase;
+      font-size:      1em;
+      line-height:    $base-line-height * 0.8;
+      margin-bottom:  0;
+      border-bottom:  none;
+    }
+  }
 }
 
 // Tutorial

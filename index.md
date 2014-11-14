@@ -20,11 +20,23 @@ Check out what the toolkit can do.  Here are a couple of short videos showing of
     <div class="embed-responsive embed-responsive-4by3">
       <iframe src="http://www.youtube.com/embed/rprzbSwqE2Y?feature=player_embedded" allowfullscreen></iframe>
     </div>
+    <div class="video-caption">
+      <h2>WhirlyGlobe 2.2</h2>
+      <p>
+        WhirlyGlobe refers to the 3D interactive globe part of the toolkit. It shares most of its code with the Maply part.
+      </p>
+    </div>
   </div>
 
   <div class="col-sm-6">
     <div class="embed-responsive embed-responsive-4by3">
       <iframe src="https://www.youtube.com/embed/YTBSl4Cok9A?feature=player_embedded" allowfullscreen></iframe>
+    </div>
+    <div class="video-caption">
+      <h2>Maply 2.2</h2>
+      <p>
+        The Maply part of the toolkit refers to the 2D slippy map.
+      </p>
     </div>
   </div>
 </div>
