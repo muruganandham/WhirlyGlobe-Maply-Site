@@ -119,6 +119,44 @@ body {
   }
 }
 
+// prev / next
+// modeled after http://www.chromaticsites.com/blog/css-image-rollovers-accessible-standard-compliant-flicker-free
+//
+#prev-next {
+  padding: 24px 0 24px 0;
+  text-align: center;
+}
+a.prev {
+  display: inline-block;
+  width: 159px;
+  height: 64px;
+  background: url('{{ site.baseurl }}/images/prev.png') no-repeat 0 0;
+  overflow: hidden;
+  text-indent: -10000px;
+  font-size: 0px;
+  line-height: 0px;
+}
+a.next {
+  display: inline-block;
+  width: 159px;
+  height: 64px;
+  background: url('{{ site.baseurl }}/images/next.png') no-repeat 0 0;
+  overflow: hidden;
+  text-indent: -10000px;
+  font-size: 0px;
+  line-height: 0px;
+}
+a:visited.prev, a:visited.next {
+  background-position: 0 -64px;
+}
+a:hover.prev, a:hover.next {
+  background-position: 0 -128px;
+}
+a:active.prev, a:active.next {
+  background-position: 0 -192px;
+}
+
+
 // Using media queries with like this:
 // @include media-query($palm) {
 //     .wrapper {
