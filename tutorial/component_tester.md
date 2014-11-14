@@ -3,8 +3,18 @@ title: Component Tester
 layout: tutorial
 ---
 
-Let's check out some of WG-­Maply's capabilities.  The toolkit comes with a test app that runs through the really interesting ones.  It's included with the source you cloned from github.
+The tutorials provide simple examples for much WhirlyGlobe-Maply functionality.  We can't cover everything or maybe we just don't have the time.  But odds are we have tested a given piece of functionality and there's one place to find it.
 
-In libs/WhirlyGlobe-Maply/WhirlyGlobeSrc, open the WhirlyGlobeComponentTester project. Build and run it, preferably on some good hardware. Fool around with the various display options, and you'll get a taste of how capable WG-­Maply is.
+I give you: The WhirlyGlobe-Maply Component Tester!
 
-Spending a few minutes with WhirlyGlobeComponentTester will familiarize you with many of the toolkit’s capabilities. Over the next few sections we'll use some of those ourselves, and show you how to build a simple app with a globe or a flat map that displays the world, shows country outlines, and responds to taps and selections. After that, hopefully you'll be comfortable browsing through the [WG-Maply documentation](http://mousebird.github.io/WhirlyGlobe/documentation/2_3/) and the WhirlyGlobeComponentTester source for ideas of what to try next.
+![MapQuest Open Satellite]({{ site.baseurl }}/images/tutorial/component_tester_1.png)
+
+Turning on every single feature in the app is... colorful.
+
+### Component Tester Source
+
+The component tester app is the central location for trying things out.  Most WhirlyGlobe-Maply features are represented in there somewhere.  And you already have it.
+
+Look in _libs/WhirlyGlobeMaply/WhirlyGlobeSrc/WhirlyGlobeComponentTester_ or just search for _WhirlyGlobeComponentTester_.  That's the project and the main file is TestViewController.m.  Open that up and poke around.  Make some changes.  See what happens.
+
+Be sure to consult the reference docs when you need them.  If you get stuck, drop us an email.  And happy coding!
