@@ -22,7 +22,7 @@
 
 - section: Interaction
   files: 
-    - filename: taps_and_selection.html
+    - filename: vector_selection.html
 
 - section: Advanced
   files:
