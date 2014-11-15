@@ -3,13 +3,23 @@ title: WhirlyGlobe-Maply
 layout: home
 ---
 
-## What It Is
+## WhirlyGlobe-Maply for iOS and Android
 
-Swag Thundercats next level banh mi, mlkshk quinoa flexitarian Odd Future. Chambray pour-over sartorial, readymade keffiyeh chia fap Bushwick Portland. American Apparel Neutra McSweeney's Pinterest. Keytar synth Pinterest, 8-bit hoodie meggings blog chillwave pop-up Etsy authentic disrupt Carles scenester polaroid.
+Based on OpenGL ES and focused on mobile first, WhirlyGlobe-Maply is used in a wide variety of altas, weather, visualization, and map apps.
+The feature list is pretty long, but here are a few things you can display with the toolkit.
 
-Asymmetrical chambray you probably haven't heard of them, fingerstache mumblecore raw denim before they sold out.
+- Giant networked image basemaps
+- Animated weather data
+- Labels, both 2D and 3D
+- Markers, likewise 2D and 3D
+- Floating annotations
+- Vectors, outlined and filled
+- Lofted polygons
+- Tiled vector maps
 
-Butcher four loko ethical organic cray you probably haven't heard of them chia meh polaroid, church-key direct trade roof party Tumblr YOLO. Thundercats Kickstarter cray sriracha chia. Fanny pack street art meggings retro Banksy. Cray street art hoodie, distillery tousled keytar kitsch Godard Tumblr sriracha PBR&B Williamsburg wolf quinoa pop-up. Schlitz polaroid taxidermy vegan art party small batch.
+It's big, but it's also friendly.  You develop with the native tools on each platform and we've got some nice tutorials.  Developers of all skill levels have made WhirlyGlobe-Maply apps.  You can too!
+
+The iOS version, for iPhone and Android is the most mature.  Android is coming along nicely with Maply ported first.
 
 ## Videos
 
