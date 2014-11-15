@@ -101,7 +101,6 @@
 		2B769FBD1A16E02E00C60136 /* gibs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gibs.png; sourceTree = "<group>"; };
 		2B769FBE1A16E02E00C60136 /* mapandglobe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapandglobe.png; sourceTree = "<group>"; };
 		2B769FBF1A16E02E00C60136 /* mtrainier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mtrainier.png; sourceTree = "<group>"; };
-		2B769FC01A16E3E500C60136 /* globe.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.PNG; sourceTree = "<group>"; };
 		2B769FC11A16E43800C60136 /* index.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = index.md; path = ../index.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -327,7 +326,6 @@
 		2B769FB91A16E02E00C60136 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				2B769FC01A16E3E500C60136 /* globe.PNG */,
 				2B769FBA1A16E02E00C60136 /* android.png */,
 				2B769FBB1A16E02E00C60136 /* brazil.png */,
 				2B769FBC1A16E02E00C60136 /* geneva.png */,
