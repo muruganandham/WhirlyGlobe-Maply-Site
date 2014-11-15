@@ -63,5 +63,5 @@ Check out the [mousebird consulting blog](http://mousebirdconsulting.blogspot.co
 
 ## Background
 
-WhirlyGlobe-Maply is wholly owned by mousebird consulting and distributed under the Apache 2.0 license. The toolkit is free, but we make money from consulting. If you're doing something commercial, consider us in your development plans.
+WhirlyGlobe-Maply is wholly owned by [mousebird consulting](http://www.mousebirdconsulting.com/) and distributed under the Apache 2.0 license. The toolkit is free, but we make money from consulting. If you're doing something commercial, consider us in your development plans.
 

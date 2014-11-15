@@ -186,6 +186,14 @@ a:active.prev, a:active.next {
   background-position: 0 -192px;
 }
 
+// footer
+.site-description {
+  text-align: center;
+}
+.social-media-list {
+  text-align: right;
+}
+
 
 // Using media queries with like this:
 // @include media-query($palm) {
