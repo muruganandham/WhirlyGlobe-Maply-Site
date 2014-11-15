@@ -71,13 +71,17 @@ body {
 // Navbar
 //
 .navbar {
-  min-height:      58px;
+  min-height:      48px;
   font-family:     Museo-500, serif;
+}
+// Tweak placement of WhirlyGlobe-Maply logo
+.navbar-brand {
+  padding-top:     9px;
 }
 
 // Carousel
 #carousel-homepage {
-  padding-top:     36px; // Clear out room for the fixed header
+  padding-top:     30px; // Clear out room for the fixed header
 }
 
 // Homepage
@@ -86,10 +90,10 @@ body {
   background-color: #fff;
   padding-bottom:   30px;
   h2, h3, h4, h5, h6 {
-    font-family:   Museo-500;
-    padding-top:   1em;
-    line-height:   2.4em;
-    border-bottom: solid 1px #000;
+    font-family:    Museo-500;
+    padding-top:    1em;
+    line-height:    2.4em;
+    border-bottom:  solid 1px #000;
   }
   p {
     font-family:   Roboto;
