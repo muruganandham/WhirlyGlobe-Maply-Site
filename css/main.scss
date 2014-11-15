@@ -5,8 +5,8 @@
 
 // Our variables
 $background-color: #443933; // supplemented with an image pattern below.
-$triangle-color-1:   #f2b200; // h2 decorator in tutorials, also referenced in _sass/_base.scss
-$triangle-color-2:   #e84b38; // h3 decorator in tutorials, also referenced in _sass/_base.scss
+$triangle-color-1:   #f2b200;
+$triangle-color-2:   #e84b38;
 
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
@@ -114,6 +114,19 @@ body {
 .tutorial {
   color:           $text-color;
   padding-top:     68px; // Clear out room for the fixed header
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:visited {
+      color: darken($text-color, 15%);
+    }
+
+    &:hover {
+      color: $triangle-color-1;
+      text-decoration: underline;
+    }
+  }
 }
 .tutorial-main {
   background-color: #00557e;
