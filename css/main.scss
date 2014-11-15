@@ -166,7 +166,7 @@ a.prev {
   height: 64px;
   background: url('{{ site.baseurl }}/images/prev.png') no-repeat 0 0;
   overflow: hidden;
-//  text-indent: -10000px;
+  font-family:    Museo-500;
   font-size: 1em;
   line-height: 4.6em;
 }
@@ -176,7 +176,7 @@ a.next {
   height: 64px;
   background: url('{{ site.baseurl }}/images/next.png') no-repeat 0 0;
   overflow: hidden;
-//  text-indent: -10000px;
+  font-family:    Museo-500;
   font-size: 1em;
   line-height: 4.6em;
 }
