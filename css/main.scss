@@ -166,9 +166,9 @@ a.prev {
   height: 64px;
   background: url('{{ site.baseurl }}/images/prev.png') no-repeat 0 0;
   overflow: hidden;
-  text-indent: -10000px;
-  font-size: 0px;
-  line-height: 0px;
+//  text-indent: -10000px;
+  font-size: 1em;
+  line-height: 4.6em;
 }
 a.next {
   display: inline-block;
@@ -176,9 +176,9 @@ a.next {
   height: 64px;
   background: url('{{ site.baseurl }}/images/next.png') no-repeat 0 0;
   overflow: hidden;
-  text-indent: -10000px;
-  font-size: 0px;
-  line-height: 0px;
+//  text-indent: -10000px;
+  font-size: 1em;
+  line-height: 4.6em;
 }
 a:visited.prev, a:visited.next {
   background-position: 0 -64px;

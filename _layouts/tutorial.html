@@ -124,7 +124,7 @@
           {%   endif %}
 
           <!-- deliver next/prev links -->
-          <a class="prev" href="{{ site.data.tutorial[prev_section].files[prev_page].filename | prepend: '/tutorial/' | prepend: site.baseurl }}"></a><a class="next" href="{{ site.data.tutorial[next_section].files[next_page].filename | prepend: '/tutorial/' | prepend: site.baseurl }}"></a>
+          <a class="prev" href="{{ site.data.tutorial[prev_section].files[prev_page].filename | prepend: '/tutorial/' | prepend: site.baseurl }}">Previous</a><a class="next" href="{{ site.data.tutorial[next_section].files[next_page].filename | prepend: '/tutorial/' | prepend: site.baseurl }}">Next</a>
 
           {% endif %}
           {% endfor %}
