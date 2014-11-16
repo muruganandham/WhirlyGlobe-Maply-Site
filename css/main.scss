@@ -28,9 +28,9 @@ $on-laptop:        800px;
 // Overall
 // Scale It Down
 //
-code {
+pre > code {
   font-family:     monospace;
-  font-size:       $base-font-size;
+  font-size:       $base-font-size * 0.86;
 }
 
 h2 {
