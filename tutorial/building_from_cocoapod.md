@@ -1,5 +1,5 @@
 ---
-title: Cocoapods Distribution
+title: Cocoapods
 layout: tutorial
 ---
 
