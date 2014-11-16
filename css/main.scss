@@ -110,7 +110,6 @@ body {
 }
 
 // Tutorial
-//
 .tutorial {
   color:           $text-color;
   padding-top:     68px; // Clear out room for the fixed header
@@ -130,11 +129,13 @@ body {
 }
 .tutorial-main {
   background-color: #00557e;
+  padding-bottom:   30px;
   h2, h3, h4, h5, h6 {
-    font-family:   Museo-500;
+    padding-top:    1em;
+    font-family:    Museo-500;
   }
   p {
-    font-family:   Roboto;
+    font-family:    Roboto;
   }
   p, h4, h5, h6, .highlight {
     margin-left:   $base-font-size * 2;
@@ -154,6 +155,7 @@ body {
     margin-left:   0;
   }
 }
+
 .tutorial-sidebar {
   ol, ul {
     margin-left: 10px;
