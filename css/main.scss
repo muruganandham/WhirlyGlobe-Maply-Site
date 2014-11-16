@@ -154,6 +154,14 @@ body {
     padding:       0 $base-font-size * 0.9 0 0;
     margin-left:   0;
   }
+  .well {
+    margin-left:   $base-font-size * 2;
+    color:         #00557e;
+    background:    white url('{{ site.baseurl }}/images/mousebird.png') no-repeat top right;
+    h4, p {
+      margin-left: 0;
+    }
+  }
 }
 
 .tutorial-sidebar {
