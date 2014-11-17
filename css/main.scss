@@ -5,8 +5,8 @@
 
 // Our variables
 $background-color: #443933; // supplemented with an image pattern below.
-$triangle-color-1: #f2b200;
-$triangle-color-2: #e84b38;
+$triangle-color-1:   #f2b200;
+$triangle-color-2:   #e84b38;
 
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
@@ -24,8 +24,6 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-$footer-height:    124px;
 
 // Overall
 // Scale It Down
@@ -46,22 +44,6 @@ h3 {
 h4 {
   font-size:       $base-font-size * 1.2;
 }
-
-html, body {
-  height: 100%;
-}
-
-// Wrapper for page content to push down footer
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -1 * $footer-height;
-  /* Pad bottom by footer height */
-  padding: 0 0 $footer-height;
-}
-
 // Background image
 //
 body {
@@ -232,9 +214,6 @@ a:active.prev, a:active.next {
 }
 
 // footer
-.site-footer {
-  height:     $footer-height;
-}
 .site-description {
   text-align: center;
 }
