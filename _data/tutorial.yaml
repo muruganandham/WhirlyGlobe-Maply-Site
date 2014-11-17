@@ -20,10 +20,21 @@
 - section: Overlays
   files:
     - filename: adding_vector_data.html
+    - filename: screen_markers.html
+    - filename: screen_labels.html
+
+- section: Shapes
+  files:
+    - filename: spheres.html
+    - filename: cylinders.html
+    - filename: great_circles.html
+    - filename: arrows_3d.html
 
 - section: Interaction
   files: 
     - filename: vector_selection.html
+    - filename: screen_marker_selection.html
+    - filename: selection_everything.html
 
 - section: Advanced
   files:

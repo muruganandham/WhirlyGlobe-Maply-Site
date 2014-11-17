@@ -3,9 +3,7 @@ title: Apps Using WhirlyGlobe-Maply
 layout: default
 ---
 
-A toolkit is only as good as the apps that use it.  Here are some of our favorites. If you'd like to be included here, just send us an image and a short description.
-
----
+A toolkit is only as good as the apps that use it.  Here are some of our favorites. If you'd like to be included, just send an image, a short description and a link.
 
 {% include app_entry.html name="Gaia GPS" image="gaiagps.png" body="Gaia GPS was featured in Apple's Your Verse stories, Gaia GPS helps people explore remote places, and stay safer in the woods." link="https://itunes.apple.com/us/app/gaia-gps-topo-maps-trails/id329127297?mt=8" %}
 

@@ -30,15 +30,15 @@ This part will take a while.  WG-Maply uses a bunch of other projects and it has
 
 Once it's done we're done with Terminal. Close that window and open the HelloEarth project in Xcode.
 
-<div class="well well-lg mb-aside">
-<h4>Upgrading to 2.3</h4>
+<div class="well">
+<h4><span class="label label-warning" style="margin-right:10px">Note</span>Upgrading to 2.3</h4>
 
 <p>
   In some rare cases you may have problems upgrading an existing installation to 2.3 or… other times this happens. Hey, git is a dark art.
 </p>
 
 <p>
-  If you get an error message when doing the submodule init, try running the *update_from_2_2_to_2_3.sh* script.  It cleans out the submodules and tries again, basically.
+  If you get an error message when doing the submodule init, try running the <i>update_from_2_2_to_2_3.sh</i> script.  It cleans out the submodules and tries again, basically.
 </p>
 </div>
 
