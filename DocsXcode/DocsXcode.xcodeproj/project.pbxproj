@@ -115,6 +115,10 @@
 		2B76A0071A1AB1F100C60136 /* ViewController_screen_labels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_screen_labels.m; sourceTree = "<group>"; };
 		2B76A0081A1AB20600C60136 /* screen_labels_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen_labels_3.png; sourceTree = "<group>"; };
 		2B76A0091A1AB20600C60136 /* screen_labels_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen_labels_2.png; sourceTree = "<group>"; };
+		2B76A00A1A1AB31900C60136 /* ViewController_screen_markers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_screen_markers.m; sourceTree = "<group>"; };
+		2B76A00F1A1AB7F300C60136 /* screen_markers_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen_markers_3.png; sourceTree = "<group>"; };
+		2B76A0101A1AB7F300C60136 /* screen_markers_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen_markers_2.png; sourceTree = "<group>"; };
+		2B76A0111A1AB7F300C60136 /* screen_markers_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen_markers_1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -294,6 +298,9 @@
 		2B4E06CC1A153FB100ADA318 /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2B76A00F1A1AB7F300C60136 /* screen_markers_3.png */,
+				2B76A0101A1AB7F300C60136 /* screen_markers_2.png */,
+				2B76A0111A1AB7F300C60136 /* screen_markers_1.png */,
 				2B76A0081A1AB20600C60136 /* screen_labels_3.png */,
 				2B76A0091A1AB20600C60136 /* screen_labels_2.png */,
 				2B76A0031A1AAF6400C60136 /* screen_labels_1.png */,
@@ -330,6 +337,7 @@
 		2B4E06DB1A15429400ADA318 /* code */ = {
 			isa = PBXGroup;
 			children = (
+				2B76A00A1A1AB31900C60136 /* ViewController_screen_markers.m */,
 				2B76A0071A1AB1F100C60136 /* ViewController_screen_labels.m */,
 				2B4E06E61A155F2600ADA318 /* ViewController_adding_vector_data.m */,
 				2B4E06E31A15572100ADA318 /* ViewController_remote_image_layer.m */,
