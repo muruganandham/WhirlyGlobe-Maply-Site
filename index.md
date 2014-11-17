@@ -8,18 +8,73 @@ layout: home
 Based on OpenGL ES and focused on mobile first, WhirlyGlobe-Maply is used in a wide variety of altas, weather, visualization, and map apps.
 The feature list is pretty long, but here are a few things you can display with the toolkit.
 
-- Giant networked image basemaps
-- Animated weather data
-- Labels, both 2D and 3D
-- Markers, likewise 2D and 3D
-- Floating annotations
-- Vectors, outlined and filled
-- Lofted polygons
-- Tiled vector maps
+<div class="row" style="margin-bottom:10pt">
+<div class="col-sm-3">
+<b style="opacity:0.7;">Tiled Images</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Animated images</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Labels (2D)</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Markers (2D)</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Annotations</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Vector Maps</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Lofted Polys</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Labels (3D)</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Markers (3D)</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Spheres</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Shaders</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Globes</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Maps</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Cylinders</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">GeoJSON</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Shapefiles</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Animation</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Lofted Polys</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Vector Tiles</b>
+</div>
+<div class="col-sm-3">
+<b style="opacity:0.7;">Extruded shapes</b>
+</div>
+</div>
 
-It's big, but it's also friendly.  You develop with the native tools on each platform and we've got some nice tutorials.  Developers of all skill levels have made WhirlyGlobe-Maply apps.  You can too!
 
-The iOS version, for iPhone and Android is the most mature.  Android is coming along nicely with Maply ported first.
+It's big, but it's also friendly.  You develop with the native tools on each platform and we've got some nice [tutorials]({{ site.baseurl }}/tutorial/getting_started.html).  Developers of all skill levels have made WhirlyGlobe-Maply apps.  You can too!
+
+The iOS version, for iPhone and Android is the most mature.  Android is coming along nicely with the 2D map (Maply) ported first.
 
 ## Videos
 
