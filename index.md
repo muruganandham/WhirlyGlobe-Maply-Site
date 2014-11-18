@@ -110,12 +110,12 @@ Check out what the toolkit can do.  Here are a couple of short videos showing of
 
 <ul class="docs-and-resources">
   <li class="arrow">There's a <a href="{{ site.baseurl }}/tutorial/getting_started.html">getting started</a> guide. I suggest you get started there.</li>
-  <li class="doc">Reference documentation is also <a href="{{ site.baseurl }}/reference/reference.html">there</a>. Best to use if you're in the middle of development.</li>
-  <li class="mail">Please join the <a href="http://eepurl.com/D30CD">mailing list</a> for very infrequent announcements.</li>
-  <li class="mousebird">Check out the <a href="http://mousebirdconsulting.blogspot.com/">mousebird consulting blog</a> for technical discussion.</li>
+  <li class="doc"><a href="{{ site.baseurl }}/reference/reference.html">Reference documentation</a> is also available.</li>
+  <li class="mail">Please join the <a href="http://eepurl.com/D30CD" target="_blank">mailing list</a> for very infrequent announcements.</li>
+  <li class="mousebird">Check out the <a href="http://mousebirdconsulting.blogspot.com/" target="_blank">mousebird consulting blog</a> for technical discussion.</li>
 </ul>
 
 ## Background
 
-WhirlyGlobe-Maply is wholly owned by [mousebird consulting](http://www.mousebirdconsulting.com/) and distributed under the Apache 2.0 license. The toolkit is free, but we make money from consulting. If you're doing something commercial, consider us in your development plans.
+WhirlyGlobe-Maply is wholly owned by <a href="http://www.mousebirdconsulting.com/" target="_blank">mousebird consulting</a> and distributed under the Apache 2.0 license. The toolkit is free, but we make money from consulting. If you're doing something commercial, consider us in your development plans.
 
