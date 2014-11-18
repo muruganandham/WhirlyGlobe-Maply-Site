@@ -108,13 +108,12 @@ Check out what the toolkit can do.  Here are a couple of short videos showing of
 
 ## Documentation and Resources
 
-There's a [getting started]({{ site.baseurl }}/tutorial/getting_started.html) guide. I suggest you get started there.
-
-Reference documentation is also [there]({{ site.baseurl }}/reference/reference.html). Best to use if you're in the middle of development.
-
-Please join the [mailing list](http://eepurl.com/D30CD) for very infrequent announcements.
-
-Check out the [mousebird consulting blog](http://mousebirdconsulting.blogspot.com) for technical discussion.
+<ul class="docs-and-resources">
+  <li class="arrow">There's a <a href="{{ site.baseurl }}/tutorial/getting_started.html">getting started</a> guide. I suggest you get started there.</li>
+  <li class="doc">Reference documentation is also <a href="{{ site.baseurl }}/reference/reference.html">there</a>. Best to use if you're in the middle of development.</li>
+  <li class="mail">Please join the <a href="http://eepurl.com/D30CD">mailing list</a> for very infrequent announcements.</li>
+  <li class="mousebird">Check out the <a href="http://mousebirdconsulting.blogspot.com/">mousebird consulting blog</a> for technical discussion.</li>
+</ul>
 
 ## Background
 
