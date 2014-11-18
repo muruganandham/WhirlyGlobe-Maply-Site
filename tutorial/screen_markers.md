@@ -68,3 +68,11 @@ And thus we get... bars!
 ![World Bars]({{ site.baseurl }}/images/tutorial/screen_markers_3.png)
 
 Astute observers will point out that not all of those are world capitals.  Don't bother, I'm an American and thus ignorant of geography.
+
+### Marker Details
+
+Let's take a closer look at what we did there.  The capitals themselves are obvious enough.  We just create a MaplyCoordinate, which is in radians from degrees, which the rest of you find more intuitive.  Weirdos.
+
+For each marker, we just set the location, assign the image and the size.  The size is in screen pixels and won't vary.  Then we add each marker to an array and hand them over as a group.
+
+The reason we add the markers all at once is performance.  WhirlyGlobe-Maply needs that hint to batch them all together.  There are some exceptions to this, but in general the toolkit is batching based on what you hand it.  And batching is good.
