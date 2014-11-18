@@ -26,7 +26,6 @@
 - section: Shapes
   files:
     - filename: spheres.html
-    - filename: great_circles.html
 
 - section: Interaction
   files: 
