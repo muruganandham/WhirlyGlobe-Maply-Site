@@ -272,7 +272,7 @@ ul.docs-and-resources {
   li.sidebar-list-item.current {
     padding-left:   0;
     &:before {
-      margin-left:  -$base-font-size;
+      margin-left:  -$base-font-size * 0.92;
       content:      '▶ ';
       font-size:    $base-font-size * 0.8;
       color:        $triangle-color-1;
