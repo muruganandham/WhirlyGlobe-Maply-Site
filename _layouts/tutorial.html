@@ -23,16 +23,16 @@
                       {% for tutorial in site.data.tutorial %}
                       <li class="sidebar-header-item">{{ tutorial.section }}</li>
                       <ol class="list-unstyled sidebar-list-items">
-                      {% for file in tutorial.files %}
-                      {% if page.title %}
-                      {% for page in site.pages %}
-                      {% capture f %}{{ page.url | remove:page.dir | remove:'/' }}{% endcapture %}
-                      {% if f == file.filename %}
-                      <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                      {% endif %}
-                      {% endfor %}
-                      {% endif %}
-                      {% endfor %}
+                      {%   for file in tutorial.files %}
+                      {%     if page.title %}
+                      {%       for page in site.pages %}
+                      {%         capture f %}{{ page.url | remove:page.dir | remove:'/' }}{% endcapture %}
+                      {%         if f == file.filename %}
+                      <li class="sidebar-list-item"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                      {%         endif %}
+                      {%       endfor %}
+                      {%     endif %}
+                      {%   endfor %}
                       </ol>
                       {% endfor %}
                     </ol>
