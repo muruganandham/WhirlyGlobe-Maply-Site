@@ -26,6 +26,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$tutorial-index-left-margin: 12px;
 $footer-height:    124px;
 
 // Overall
@@ -256,16 +257,17 @@ ul.docs-and-resources {
     }
   }
 }
-
 .tutorial-sidebar {
-  ol, ul {
-    margin-left: 10px;
-  }
   li {
     font-family:   Roboto;
   }
   li.sidebar-header-item {
     text-transform: uppercase;
+    padding-left:   $tutorial-index-left-margin;
+  }
+  ol.sidebar-list-items {
+    margin-left:    $tutorial-index-left-margin;
+    padding-bottom: 0.5 * $spacing-unit;
   }
 }
 
