@@ -24,14 +24,16 @@
                       <li class="sidebar-header-item">{{ tutorial.section }}</li>
                       <ol class="list-unstyled sidebar-list-items">
                       {%   for file in tutorial.files %}
-                      {%     if page.title %}
-                      {%       for page in site.pages %}
-                      {%         capture f %}{{ page.url | remove:page.dir | remove:'/' }}{% endcapture %}
-                      {%         if f == file.filename %}
-                      <li class="sidebar-list-item"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                      {%     for p in site.pages %}
+                      {%       capture f %}{{ p.url | remove:p.dir | remove:'/' }}{% endcapture %}
+                      {%       if f == file.filename %}
+                      {%         if p.title == page.title %}
+                      <li class="sidebar-list-item current"><a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+                      {%         else %}
+                      <li class="sidebar-list-item"><a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
                       {%         endif %}
-                      {%       endfor %}
-                      {%     endif %}
+                      {%       endif %}
+                      {%     endfor %}
                       {%   endfor %}
                       </ol>
                       {% endfor %}

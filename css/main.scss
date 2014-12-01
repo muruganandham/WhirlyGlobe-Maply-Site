@@ -269,6 +269,15 @@ ul.docs-and-resources {
     margin-left:    $tutorial-index-left-margin;
     padding-bottom: 0.5 * $spacing-unit;
   }
+  li.sidebar-list-item.current {
+    padding-left:   0;
+    &:before {
+      margin-left:  -$base-font-size;
+      content:      '▶ ';
+      font-size:    $base-font-size * 0.8;
+      color:        $triangle-color-1;
+    }
+  }
 }
 
 // prev / next
