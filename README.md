@@ -76,6 +76,20 @@ This'll start a [local server running on port 4000](http://localhost:4000/tutori
 
 ### Adding/Deleting Pages
 
-The tutorial sidebar yields a linear navigation through the tutorial pages. The "prev/next" arrows will also rely on
-this ordering. The ordering is controlled by ```_data/tutorial.yaml``` which is simply an ordered list of filenames in
-the ```tutorials``` directory.
+The tutorial sidebar yields a linear navigation through the tutorial pages. The ordering is controlled by
+```_data/tutorial.yaml``` which is simply an ordered list of filenames in the ```tutorials``` directory. The "prev/next"
+arrows also, by default, rely on this ordering, although this may be overridden on a per-page basis.
+
+To manually specify the values for the previous and next pages, you'll add some _yaml front matter_ to the markdown
+page. Here's an example where the _Source Distribution_ page circumvents the linear progression specified in
+```_data/tutorial.yaml```, linking instead to the ```hello_earth.html``` and the ```globe_or_map.html``` pages.
+
+```
+---
+title: Source Distribution
+layout: tutorial
+prev_next:
+  prev: hello_earth.html
+  next: globe_or_map.html
+---
+```
