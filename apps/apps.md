@@ -42,3 +42,5 @@ A toolkit is only as good as the apps that use it.  Here are some of our favorit
 {% include app_entry.html name="Xweather - Extreme Weather" image="xweather.jpeg" body="Xweather displays extreme weather related events on a globe." link="https://itunes.apple.com/us/app/xweather/id520729396?mt=8" %}
 
 {% include app_entry.html name="Santa's Big Helper" image="santashelper.jpeg" body="Santa's Big Helper is a cute holiday app for tracking Santa Claus as he journeys around the globe." link="https://itunes.apple.com/us/app/santas-big-helper-9-christmas/id401665877?mt=8" %}
+
+{% include app_entry.html name="Fielda" image="fielda-logo.png" body="Fielda combines mobile maps with time-saving forms and workflows." link="https://fielda.com" %}
